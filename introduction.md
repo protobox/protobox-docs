@@ -7,4 +7,4 @@
 
 Here are some recommendations for what to read first:
 
-- [Installation](/docs/installation) and [configuration](/docs/configuration).
+- [Installation](/docs/installation) and [Configuration](/docs/configuration).
