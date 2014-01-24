@@ -15,3 +15,11 @@ Good question. Protobox originally started as a fork of puphpet and this project
 7. **New Opportunities**. We have a lot more functionality that we plan to build. Because we use ansible, we can provision remotely over ssh without any agents. This makes it possible to potentially spin up boxes at aws, linode, digitalocean using that same YAML file that you use locally. If you want to switch to nginx on a staging server for example you can toggle it just like you would for vagrant locally. We also have plans to support multiple machines so you can easily spin up a db, web, worker servers using vagrant. These kinds of tasks are difficult when using puppet, chef, etc since you need agents installed on the remote machine.
 
 Similar to puphpet, everything is open source. The goal of protobox is to be another tool in the developer arsenal. At my job, we had problems with existing solutions so I set out to build something that fit the bill. Upon on-boarding a new frontend dev, they were challenged with remembering to toggle the right dependencies for different projects (need to add virtual host to nginx, remember to setup the mysql databases) so the protobox website really helped them visualize it and start to learn devops.
+
+## Credit
+
+Protobox was developed by [Patrick Heeney](https://github.com/patrickheeney) and inspired by the [puphpet](https://github.com/puphpet/puphpet) project. A special thanks goes out to our [contributors](https://github.com/protobox/protobox/graphs/contributors) for helping grow this project. Protobox is also made possible by the best orchestration engine in existence: [ansible](http://www.ansibleworks.com/).
+
+## License ##
+
+Protobox is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).

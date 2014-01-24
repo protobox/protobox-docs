@@ -1,7 +1,7 @@
 - Preface
-	- [Introduction](/docs/)
-	- [Contributing](/docs/contributing)
+	- [Introduction](introduction.md)
+	- [Contributing](contributing.md)
 
 - Getting Started
-	- [Installation](/docs/installation)
-	- [Configuration](/docs/configuration)
+	- [Installation](installation.md)
+	- [Configuration](configuration.md)

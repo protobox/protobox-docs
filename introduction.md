@@ -7,5 +7,5 @@
 
 Here are some recommendations for what to read first:
 
-- [About this project](/docs/about)
-- [Installation](/docs/installation) and [Configuration](/docs/configuration).
+- [About this project](about.md)
+- [Installation](installation.md) and [Configuration](configuration.md).
