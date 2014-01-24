@@ -8,4 +8,5 @@
 Here are some recommendations for what to read first:
 
 - [About this project](about.md)
-- [Installation](installation.md) and [Configuration](configuration.md).
+- [Installation](installation.md)
+- [Configuration](configuration.md).
