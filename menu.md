@@ -5,4 +5,5 @@
 
 - Getting Started
 	- [Installation](installation.md)
+	- [Common Issues](issues.md)
 	- [Contributing](contributing.md)

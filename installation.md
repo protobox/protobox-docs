@@ -10,3 +10,7 @@ Alternatively, you can install it via git manually:
     cd protobox && cp data/config/common.yml-dist data/config/common.yml
 
 Then run `vagrant up` and pull up `http://192.168.5.10/` in your browser to see if it is setup correctly.
+
+## Having issues?
+
+If you have any problems during installation or receive any error messages, check out our [common issues](issues.md)
