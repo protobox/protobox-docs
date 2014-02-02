@@ -1,10 +1,8 @@
 - Preface
 	- [Introduction](introduction.md)
-	- [About Protobox](about.md)
-	- [Modules](modules.md)
-	- [Applications](applications.md)
-	- [Contributing](contributing.md)
+	- [Supported Modules](modules.md)
+	- [Supported Applications](applications.md)
 
 - Getting Started
 	- [Installation](installation.md)
-	- [Configuration](configuration.md)
+	- [Contributing](contributing.md)

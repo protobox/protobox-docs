@@ -2,10 +2,10 @@
 
 - [Instead of puphpet or other sites](#sites)
 - [Instead of MAMP or homebrew](#apps)
-- [Instead of a plain virtual machine](#vm)
+- [Instead of a generic virtual machine](#vm)
 
 <a name="sites"></a>
-## Why should I use protobox instead of puphpet or other sites?
+## Why should I use protobox instead of puphpet or other vagrantfile builders?
 
 Good question. Protobox originally started as a fork of puphpet and this project evolved from that because of the drawbacks I experienced while trying to extend puphpet. Protobox originally started as a fork, but quickly restarted as a new project due to complexities around puppet (the language). Puphpet is also being rebuilt because of the same issues that I experienced. Here are some improvements, differences, and reasons as to why you should use protobox.
 
@@ -24,5 +24,5 @@ Similar to puphpet, everything is open source. The goal of protobox is to be ano
 
 
 <a name="vm"></a>
-## Why should I use protobox instead a regular virtual machine?
+## Why should I use protobox instead a generic virtual machine?
 

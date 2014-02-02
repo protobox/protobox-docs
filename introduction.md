@@ -13,3 +13,7 @@
 ### Common Issues
 
 - [How do I add /etc/hosts entries?](issues/hosts.md)
+
+### Contributing
+
+- [How can I help?](contributing.md)
