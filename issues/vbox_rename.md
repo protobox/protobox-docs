@@ -20,7 +20,7 @@ If you are receiving an error like the one below, this page will help you resolv
 
 	Please fix this customization and try again.
 
-This appears to be a common vagrant error without pre-set solution yet [1][2][3]. In our experience trying the following helped resolve the issue depending on your configuration:
+This appears to be a common vagrant error without pre-set solution yet [[1]](#issues)[[2]](#issues)[[3]](#issues). In our experience trying the following helped resolve the issue depending on your configuration:
 
 - `vagrant reload` - this should hopefully clear up the issue
 - open virtualbox application, if you see an old machine on the left delete it if you don't need it
@@ -29,6 +29,7 @@ This appears to be a common vagrant error without pre-set solution yet [1][2][3]
 
 If none of these work, please file an issue at the [vagrant github repository](https://github.com/mitchellh/vagrant/issues/).
 
-[1] https://github.com/mitchellh/vagrant/issues/1198
-[2] https://github.com/mitchellh/vagrant/issues/1817
-[3] https://github.com/mitchellh/vagrant/issues/1809
+<a name="issues"></a>
+- [1] https://github.com/mitchellh/vagrant/issues/1198
+- [2] https://github.com/mitchellh/vagrant/issues/1817
+- [3] https://github.com/mitchellh/vagrant/issues/1809
