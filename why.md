@@ -1,0 +1,28 @@
+# Using protobox
+
+- [Instead of puphpet or other sites](#sites)
+- [Instead of MAMP or homebrew](#apps)
+- [Instead of a plain virtual machine](#vm)
+
+<a name="sites"></a>
+## Why should I use protobox instead of puphpet or other sites?
+
+Good question. Protobox originally started as a fork of puphpet and this project evolved from that because of the drawbacks I experienced while trying to extend puphpet. Protobox originally started as a fork, but quickly restarted as a new project due to complexities around puppet (the language). Puphpet is also being rebuilt because of the same issues that I experienced. Here are some improvements, differences, and reasons as to why you should use protobox.
+
+1. **YAML Controlled**. You can use the YAML file it generates to fully configure the box. Just edit any section of the yaml and run `vagrant up` or `ruby protobox provision` to apply the changes. It makes it really easy to swap between apache and nginx for example by just toggling `install: 0|1` in the yaml. Or switch to hhvm, postgres, etc. Protobox is the only solution to generate YAML that doesn't have to be re-imported back into the website, so you work offline or without the web GUI at all.
+2. **Support for more functionality**. We ditched puppet (the language) because of all the drawbacks in trying to add new functionality and sevices. Protobox uses ansible which has many, many advantages over puppet. We are now able to build in support for tons of services and application installing: hhvm, mailcatcher, node, mariadb, postgres, mongodb, riak, redis, beanstalkd, newrelic, ngrok, etc are all examples of functionality that other software does not have yet. Protobox also has an application layer: symfony, wordpress, sylius, laravel, etc that has never been done before. 
+3. **PuPHPet is for PHP**. Our roadmap includes expanding the languages so ruby devs for example can fire up popular ruby applications. Same for node/js devs or anyone wanted to play around with a new language or software. The goal is so it doesn't take longer than a couple minutes to setup a development box irregardless of the language / platform so you can do this: `protobox install wordpress_nginx_php55`, `protobox install spreecommerce_ruby3`, or `protobox install nodejs_ghost` and have a system ready in a couple of minutes. Popular web applications can bundle a YAML file that any devs can toss into protobox to get it up in running in minutes already configured and ready to go.
+4. **Easier Updates**. Protobox eliminates thousands of different "vagrant+application" vagrantfiles on github that never get maintained and are unlikly to work on the latest versions of vagrant / virtualbox / vmware. Protobox can update with this software to fix all applications at once since they use the same base. Just `git pull` the latest version to update.
+5. **Sharing / Forking**. Right now you can build a config, share it, or fork any configurations. You can also submit pull requests for "official boxes". This means that you can easily share configurations with team members / the world to get up and going quickly. I could give you a YAML file for a private git application that has everything ready to go for our organization and within a few minutes you can start working on it. I used to have 50 custom made vagrant + puppet boxes, each in a different state of development. I then switched to puphpet for a few boxes which added another half dozen sitting around. Now I have one codebase and 55 different yaml files making it a breeze to maintain compared to the nightmare I had before. I also had no way to on-board another dev without zipping up each one independently.
+6. **Learning**. Protobox is built using ansible which is one of the best orchestration engines in existance. It has so many benefits over puppet, chef, etc. Its YAML based, faster provisioning, no agents required, easy to learn, faster to develop with, and they release new features much faster compared to competition. Once you are famaliar with the YAML based configuration file of protobox you should have no trouble jumping into the ansible folder since it too is YAML based. You can copy and paste any ansible roles from the ansible folder within protobox and use them in custom deployments or anywhere ansible is used. Protobox is the perfect gateway to learning ansible and dev ops.
+7. **New Opportunities**. We have a lot more functionality that we plan to build. Because we use ansible, we can provision remotely over ssh without any agents. This makes it possible to potentially spin up boxes at aws, linode, digitalocean using that same YAML file that you use locally. If you want to switch to nginx on a staging server for example you can toggle it just like you would for vagrant locally. We also have plans to support multiple machines so you can easily spin up a db, web, worker servers using vagrant. These kinds of tasks are difficult when using puppet, chef, etc since you need agents installed on the remote machine.
+
+Similar to puphpet, everything is open source. The goal of protobox is to be another tool in the developer arsenal. At my job, we had problems with existing solutions so I set out to build something that fit the bill. Upon on-boarding a new frontend dev, they were challenged with remembering to toggle the right dependencies for different projects (need to add virtual host to nginx, remember to setup the mysql databases) so the protobox website really helped them visualize it and start to learn devops.
+
+<a name="apps"></a>
+## Why should I use protobox instead of MAMP?
+
+
+<a name="vm"></a>
+## Why should I use protobox instead a regular virtual machine?
+

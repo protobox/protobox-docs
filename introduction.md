@@ -1,12 +1,15 @@
 # Introduction
 
-- [Where To Start](#where-to-start)
+## Installation / Configuration
 
-<a name="where-to-start"></a>
-## Where To Start
-
-Here are some recommendations for what to read first:
-
-- [About this project](about.md)
 - [Installation](installation.md)
 - [Configuration](configuration.md).
+
+## Learn More
+
+- [About this project](about.md)
+- [Why should I use protobox](why.md)
+
+## Common Issues
+
+- [How do I add /etc/hosts entries?](issues/hosts.md)
