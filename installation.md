@@ -1,6 +1,6 @@
 # Installation
 
-**OSX, *nix** - Using the commad line line:
+**OSX, *nix** - Using the command line line:
 
 	ruby -e "$(curl -fsSL https://raw.github.com/protobox/protobox/master/ansible/shell/bootstrap)"
 
