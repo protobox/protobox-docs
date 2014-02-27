@@ -6,4 +6,7 @@
 - Getting Started
 	- [Installation](installation.md)
 	- [Common Issues](issues.md)
-	- [Contributing](contributing.md)
+	
+- Contributing
+	- [I'd like to help](contributing.md)
+	- [Roadmap](roadmap.md)
