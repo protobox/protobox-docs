@@ -2,7 +2,7 @@
 
 **OSX, *nix** - Using the command line line:
 
-	ruby -e "$(curl -fsSL https://raw.github.com/protobox/protobox/master/ansible/shell/bootstrap)"
+	ruby -e "$(curl -fsSL https://raw.github.com/protobox/protobox/master/lib/shell/bootstrap)"
 
 Alternatively, you can install it via git manually:
 
