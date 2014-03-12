@@ -1,11 +1,10 @@
 # Installation
 
-Using the command line line (**OSX, *nix**):
+Open up terminal and run the following:
 
-	vagrant plugin install vagrant-protobox
-	ruby -e "$(curl -fsSL https://raw.github.com/protobox/protobox/master/lib/shell/bootstrap)"
+	gem install protobox && protobox init
 
-Then run `vagrant up` and pull up `http://192.168.5.10/` in your browser to see if it is setup correctly.
+Then run `vagrant up` and follow the protobox instructions on screen.
 
 ## Having issues?
 
@@ -13,14 +12,12 @@ If you have any problems during installation or receive any error messages, chec
 
 ## Advanced Installation
 
-Alternatively, you can install it via GIT:
+Alternatively, you can install protobox via GIT:
 
-	vagrant plugin install vagrant-protobox
     git clone git@github.com:protobox/protobox.git protobox
     cd protobox && cp data/config/common.yml-dist data/config/common.yml
 
 Or, download the [protobox.zip](https://github.com/protobox/protobox/archive/master.zip) and open terminal to run the following:
 
 	cd /your/protobox/directory
-	vagrant plugin install vagrant-protobox
 	cp data/config/common.yml-dist data/config/common.yml
