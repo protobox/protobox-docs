@@ -2,7 +2,7 @@
 
 These are some features are exploring, in order of importance. 
 
-1. **Create Ruby Gem** - This would allow us to simply the installation process and add a lot more functionality to protobox. You will be able to `gem install protobox` to install it globally. You will also be able to `protobox new` within a directory to pull down the protobox files.
+1. ~~**Create Ruby Gem**~~ (**DONE**) - This would allow us to simply the installation process and add a lot more functionality to protobox. You will be able to `gem install protobox` to install it globally. You will also be able to `protobox init` within a directory to pull down the protobox files.
 
 2. **Make Applications / Provisioning Dynamic** - This would unbundle the applications from the main repository and move them to external repositories. In your protobox yaml file you can specify repositories to be downloaded during `protobox install`. This will allow dynamic installation and provisioning of any ansible playbooks.
 
