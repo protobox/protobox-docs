@@ -14,7 +14,7 @@ If you have any problems during installation or receive any error messages, chec
 
 Alternatively, you can install protobox via GIT:
 
-    git clone git@github.com:protobox/protobox.git protobox
+    git clone https://github.com/protobox/protobox.git
     cd protobox && cp data/config/common.yml-dist data/config/common.yml
 
 Or, download the [protobox.zip](https://github.com/protobox/protobox/archive/master.zip) and open terminal to run the following:
